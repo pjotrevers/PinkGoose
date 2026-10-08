@@ -35,7 +35,6 @@ header {
     align-items: center;
     background-color: #0A1117;
     justify-content: space-around;
-    margin-right: 130px;
     flex-wrap: wrap;
 }
 
@@ -79,6 +78,7 @@ header {
     display: grid;
     place-items: center;
     margin: 10px;
+    margin-left: 92px;
 }
 
 .login-button:hover {
@@ -483,6 +483,21 @@ header {
 
 .press-sec {
     
+}
+
+.decrypt {
+    background-color: #77E6FF;
+    max-width: 361px;
+    width: 100%;
+    max-height: 382px;
+    height: 100%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.pres-divs-h3 {
+    font-weight: bold;
+    font-size: 22px;
 }
 
 .footer-box {

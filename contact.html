@@ -10,20 +10,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <container class=" page-margins">
+    <div class=" page-margins">
         <header>
             <nav class="nav-links">
                 <a href="" class="logo">Pink <span class="goose-pink">Goose</span></a>
                 <div class="nav-buttons-group">
-                    <a class="home-button nav-buttons" href="index.html">Home</a>
-                    <a class="learn-button nav-buttons" href="learn.html">Learn</a>
-                    <a class="about-button nav-buttons" href="about.html">About</a>
-                    <a class="contact-button nav-buttons" href="contact.html">Contact</a>   
+                    <a class="nav-buttons" href="index.html">Home</a>
+                    <a class="nav-buttons" href="learn.html">Learn</a>
+                    <a class="nav-buttons" href="about.html">About</a>
+                    <a class="nav-buttons" href="contact.html">Contact</a>   
                 </div>
                 <a class="login-button" href="">Login</a>
             </nav>
         </header>
         <main>
+            <section class="contact-hero">
+                <h2 class="contact-h2">What's your GOOSE idea?</h2>
+                <h3 class="contact-h3">Let’s chat and see how we can help</h3>
+                <div class="contact-options">
+                    <a class="contact-card telegram-card" href="https://web.telegram.org/">
+                        <img class="contact-icon" src="assets/telegram-icon.png" alt="Telegram icon">
+                        <div class="contact-copy">
+                            <h4 class="contact-label">Telegram</h4>
+                            <p class="contact-handle">@superdao_team</p>
+                        </div>
+                    </a>
+                    <a class="contact-card email-card" href="mailto:hello@superdao.co">
+                        <img class="contact-icon" src="assets/@-icon.png" alt="Email icon">
+                        <div class="contact-copy">
+                            <h4 class="contact-label">Email</h4>
+                            <p class="contact-handle">hello@superdao.co</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section>
+                <form>
+                    <div class="contact-form-div">
+                        <h2 class="contact-form-h2">Send a post Goose</h2>
+                        <input class="input-box" type="email" name="Email" placeholder="Your email" required>
+                        <input class="input-box" type="text" name="Name" placeholder="Your name" required>
+                        <textarea class="input-box" type="text" rows="10" cols="50" name="Your message" placeholder="Your message" required></textarea>
+                        <select class="select-box" name="Goose color" id="Goose color" required>
+                            <option value="" disabled selected>Choose a goose color</option>
+                            <option value="Red">Red</option>
+                            <option value="White">White</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Black">Black</option>
+                        </select>
+                        <button class="submit-button send-button" type="submit">Send</button>
+                    </div>
+                </form>
+            </section>
         </main>
         <footer>
             <div class="footer-box">
@@ -40,6 +78,6 @@
                 </div>
             </div>
         </footer>
-    </container>
+    </div>
 </body>
 </html>

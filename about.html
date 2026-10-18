@@ -10,15 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <container class=" page-margins">
+    <div class=" page-margins">
         <header>
             <nav class="nav-links">
                 <a href="" class="logo">Pink <span class="goose-pink">Goose</span></a>
                 <div class="nav-buttons-group">
-                    <a class="home-button nav-buttons" href="index.html">Home</a>
-                    <a class="learn-button nav-buttons" href="learn.html">Learn</a>
-                    <a class="about-button nav-buttons" href="about.html">About</a>
-                    <a class="contact-button nav-buttons" href="contact.html">Contact</a>   
+                    <a class="nav-buttons" href="index.html">Home</a>
+                    <a class="nav-buttons" href="learn.html">Learn</a>
+                    <a class="nav-buttons" href="about.html">About</a>
+                    <a class="nav-buttons" href="contact.html">Contact</a>   
                 </div>
                 <a class="login-button" href="">Login</a>
             </nav>
@@ -28,22 +28,89 @@
                 <h2 class="our-hero-h2">Our heroes</h2>
                 <div class="our-hero-divs">
                     <div class="our-hero-div">
-                        <img src="assets/team-member1.png" alt="team member1">
-                        <h4>John Doe</h4>
-                        <p>Lead programmer</p>
-                        <a href="contact.html"></a>
+                        <img class="contact-img-team" src="assets/team-member1.png" alt="team member1">
+                        <h4 class="team-member-name">John Doe</h4>
+                        <p class="team-member-role">Lead programmer</p>
+                        <a class="contact-button" href="contact.html">Contact ➔</a>
                     </div>
                     <div class="our-hero-div">
-                        <img src="assets/team-member2.png" alt="team member2">
-                        <h4>Jane Doe</h4>
-                        <p>CEO</p>
-                        <a href="contact.html"></a>
+                        <img class="contact-img-team" src="assets/team-member2.png" alt="team member2">
+                        <h4 class="team-member-name">Jane Doe</h4>
+                        <p class="team-member-role">CEO</p>
+                        <a class="contact-button" href="contact.html">Contact ➔</a>
                     </div>
                     <div class="our-hero-div">
-                        <img src="assets/team-member3.png" alt="team member3">
-                        <h4>Hans Erikson</h4>
-                        <p>UX Dev Ops Reliability engineer</p>
-                        <a href="contact.html"></a>
+                        <img class="contact-img-team" src="assets/team-member3.png" alt="team member3">
+                        <h4 class="team-member-name">Hans Erikson</h4>
+                        <p class="team-member-role">UX Dev Ops Reliability engineer</p>
+                        <a class="contact-button" href="contact.html">Contact ➔</a>
+                    </div>
+                </div>
+            </section>
+                        <section>
+                <div class="news-form-div">
+                    <div class="text-align-class">
+                        <h2 class="news-form-h2">Weekly digest</h2>
+                        <h3 class="Latest-news-h3">Latest news in DAOs and Web3</h3>
+                    </div>
+                    <form class="row">
+                        <input class="email-sub-box" type="email" placeholder="Your email" name="Email" required>
+                        <button class="sub-button" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </section>
+            <section class="press-and-pod-sec">
+                <div class="pos-h2-and-h3-press-and-pod-sec">
+                    <h2 class="h2-press-and-pod-sec">Podcasts</h2>
+                    <a class="see-all" href="">see all ➔</a>
+                </div>
+                <div class="divs-container-press-sec">
+                    <div class="decrypt divs-press-sec">
+                        <img src="assets/Decrypt-logo.png" alt="Decrypt logo">
+                        <h3 class="divs-h3 divs-h3-decrypt">Superdao Raises $10.5 Million to Build an 'All-in-One' DAO Platform</h3>
+                        <p class="divs-p-press-sec">Superdao aims to make it easier for online communities to build and launch DAOs</p>
+                        <a class="divs-read" href="https://decrypt.co/">Read ➔</a>
+                    </div>
+                    <div class="blockworks divs-press-sec">
+                        <img src="assets/Blockworks-logo.png" alt="Blockworks logo">
+                        <h3 class="divs-h3 divs-h3-techcrunch">The Y Combinator of Web3 Attracts Record Number of DAO Startups</h3>
+                        <p class="divs-p-press-sec">DAOs and related startups made up an “overwhelming number of applicants” for a Web3 accelerator’s cohort this year</p>
+                        <a class="divs-read" href="https://blockworks.com/">Read ➔</a>
+                    </div>
+                    <div class="techcrunch divs-press-sec">
+                        <img src="assets/TechCrunch-logo.png" alt="TechCrunch-logo">
+                        <h3 class="divs-h3 divs-h3-blockworks">VC-backed DAO startups are racing to define what DAOs actually are</h3>
+                        <p class="divs-p-press-sec">Not all 'decentralized autonomous organizations' are autonomous... or decentralized</p>
+                        <a class="divs-read" href="https://techcrunch.com/">Read ➔</a>
+                    </div>
+                </div>
+            </section>
+            <section class="press-and-pod-sec">
+                <div class="pos-h2-and-h3-press-and-pod-sec">
+                    <h2 class="h2-press-and-pod-sec">Podcasts</h2>
+                    <a class="see-all" href="">see all ➔</a>
+                </div>
+                <div class="divs-container-pod-sec">
+                    <div class="divs-pod-sec">
+                        <img src="assets/the-pomp-podcast.png" alt="Decrypt logo">
+                        <h3 class="divs-h3">Understanding DAOs with Yury Lifshits</h3>
+                        <p class="divs-p-pod-sec">The Pomp Podcast</p>
+                        <p class="divs-p-pod-sec">by Anthony Pompliano</p>                        
+                        <a class="divs-read" href="https://open.spotify.com/show/0bn8XQHWGxXULjhp1jRmOJ">Listen ➔</a>
+                    </div>
+                    <div class="divs-pod-sec">
+                        <img src="assets/the-unstoppable-podcast.png" alt="Blockworks logo">
+                        <h3 class="divs-h3">Everything You Need to Know About DAOs with Yury Lifshits from Superdao</h3>
+                        <p class="divs-p-pod-sec">The Unstoppable Podcast</p>
+                        <p class="divs-p-pod-sec">by Josh Gordon</p>                        
+                        <a class="divs-read" href="https://open.spotify.com/show/1DgJYddsVTlhK7RghiASh5">Watch ➔</a>
+                    </div>
+                    <div class="divs-pod-sec">
+                        <img src="assets/zimma-red.png" alt="TechCrunch-logo">
+                        <h3 class="divs-h3">Yury Lifshits - Superdao: The “Shopify” for DAOs</h3>
+                        <p class="divs-p-pod-sec">Zima Red</p>
+                        <p class="divs-p-pod-sec">by Andrew Stainwold</p>                        
+                        <a class="divs-read" href="https://open.spotify.com/show/2LcySlifxkbbHUwJKzvfU4">Listen ➔</a>
                     </div>
                 </div>
             </section>
@@ -63,6 +130,6 @@
                 </div>
             </div>
         </footer>
-    </container>
+    </div>
 </body>
 </html>

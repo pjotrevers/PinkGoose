@@ -36,6 +36,7 @@ header {
     background-color: #0A1117;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
 .nav-buttons-group {
@@ -96,7 +97,6 @@ header {
     max-width: 600px;
     font-size: 74px;
     margin: 0 auto;
-    margin-top: 100px;
     color: white;
 }
 
@@ -128,8 +128,8 @@ header {
     font-size: 20px;
     width: 200px;
     font-weight: bold;
-    box-shadow: 0px 5px 20px #cdaaff73;
-    transition: transform 0.25s ease, drop-shadow 0.25s ease, background-color 0.25s ease;
+    box-shadow: 0px 0px 20px #cdaaff73;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
     text-decoration: none;
     color: #10151A;
 }
@@ -138,7 +138,7 @@ header {
     cursor: pointer;
     background-color: #dec7ff;
     transform: scale(1.1);
-    filter: drop-shadow(0px 1px 15px #ffd50091);
+    box-shadow: 0px 0px 20px #cdaaff;
 }
 
 .arrows-img {
@@ -449,7 +449,7 @@ header {
     gap: 12px;
 }
 
-.email-sub-box {
+.input-box {
     color: white;
     background-color: #10151A;
     border: 2px solid #2A3744;
@@ -458,14 +458,23 @@ header {
     width: 100%;
     max-width: 506px;
     justify-self: left;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "monserrat", Arial;
 }
 
-.sub-button {
+.input-box::placeholder {
+    color: #3D4C5B
+}
+
+.submit-button {
     padding: 20px;
     border-radius: 16px;
     background-color: #CEAAFF;
     max-width: 175px;
+    max-height: 68px;
+    height: 100%;
     width: 100%;
     height: auto;
     color: #10151A;
@@ -475,7 +484,7 @@ header {
     transition: backround-color 0.2s ease, transform 0.2s ease;
 }
 
-.sub-button:hover {
+.submit-button:hover {
     background-color: #dec7ff;
     cursor: pointer;
     transform: scale(1.1);
@@ -702,13 +711,23 @@ header {
 
 .our-hero-h2 {
     color: white;
+    justify-self: center;
+    display: flex;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 54px;
+    font-family: "Lato", Arial;
 }
 
 .our-hero-divs {
-    gap: 12px;
+    gap: 50px;
     flex-direction: row;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    color: #10151a;
+    margin-bottom: 200px;
 }
 
 .our-hero-div {
@@ -717,6 +736,85 @@ header {
     width: 100%;
     padding: 20px;
     border-radius: 16px;
+}
+
+.contact-img-team {
+    justify-self: center;
+    display: flex;
+}
+
+.team-member-name {
+    font-size: 22px;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.team-member-role {
+    font-size: 17px;
+    font-weight: 550;
+}
+
+.contact-button {
+    justify-self: right;
+    display: flex;
+    color: #10151a;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.contact-button:hover {
+    transform: scale(1.1);
+}
+
+.contact-form-div {
+    max-width: 942px;
+    width: 100%;
+    background-color: #121E28;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    text-align: left;
+    padding: 50px;
+    border-radius: 20px;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.contact-form-h2 {
+    font-family: "Lato", Arial;
+    color: #ffffff;
+    font-size: 54px;
+    margin-right: 75px;
+}
+
+.select-box {
+    color: #ffffff;
+    background-color: #10151A;
+    border: 2px solid #2A3744;
+    padding: 25px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 506px;
+    justify-self: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.select-box:invalid {
+    color: #3D4C5B;
+}
+
+.select-box option {
+    color: #3D4C5B;
+    background-color: #10151A;
+    font-weight: bold;
+}
+
+.send-button {
+    align-self: flex-end;
 }
 
 .footer-box {

@@ -19,6 +19,8 @@ header {
     padding: 20px;
 }
 
+/* header ↓ */
+
 .logo {
     color: white;
     font-size: 40px;
@@ -72,8 +74,8 @@ header {
     border-radius: 12px;
     width: 92px;
     height: 44px;
-    filter: drop-shadow(0px 0px 25px #ffffff48);
-    transition: transform 0.25s ease, background-color 0.25s ease, drop-shadow 0.25s ease;
+    box-shadow: 0px 0px 25px #ffffff48;
+    transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
     font-size: 18px;
     text-decoration: none;
     display: grid;
@@ -86,10 +88,12 @@ header {
     background-color: #3f4a55;
     cursor: pointer;
     transform: scale(1.2);
-    filter: drop-shadow(0px 0px 20px #ffffff86);
+    box-shadow: 0px 0px 20px #ffffff86;
 }
 
-.main-title-tekst {
+/* only index page ↓ */
+
+.main-title {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -149,6 +153,38 @@ header {
     width: 75px;
     color: #F78787
 }
+
+.team-sec {
+    margin-bottom: 200px;
+}
+
+.help-at-every-step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 54px;
+    font-family: "Lato", Arial;
+}
+
+.team-members {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    transition: transform 0.2s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.1);
+}
+
+/* css (over meerdere paginas gebruikt) ↓ */
 
 .h2-section1-text {
     color: white;
@@ -365,36 +401,6 @@ header {
     color: white;
 }
 
-.team-sec {
-    margin-bottom: 200px;
-}
-
-.help-at-every-step {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    font-size: 54px;
-    font-family: "Lato", Arial;
-}
-
-.team-members {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-.team-member {
-    transition: transform 0.2s ease;
-}
-
-.team-member:hover {
-    transform: scale(1.1);
-}
-
 .team-text {
     display: flex;
     align-items: center;
@@ -438,15 +444,14 @@ header {
     font-family: "Lato", Arial;
 }
 
-.Latest-news-h3 {
+.Latest-news-title {
     font-size: 36px;
     color: #9AAFC3;
 }
 
-.row {
+.news-form {
     display: flex;
     justify-content: center;
-    gap: 12px;
 }
 
 .input-box {
@@ -460,8 +465,8 @@ header {
     justify-self: left;
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 20px;
     font-family: "monserrat", Arial;
+    margin: 10px;
 }
 
 .input-box::placeholder {
@@ -469,19 +474,19 @@ header {
 }
 
 .submit-button {
+    align-self: center;
     padding: 20px;
     border-radius: 16px;
     background-color: #CEAAFF;
     max-width: 175px;
-    max-height: 68px;
+    max-height: 100px;
     height: 100%;
     width: 100%;
-    height: auto;
     color: #10151A;
     font-weight: bold;
     font-size: 20px;
     border: none;
-    transition: backround-color 0.2s ease, transform 0.2s ease;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .submit-button:hover {
@@ -707,9 +712,9 @@ header {
     font-weight: 500;
 }
 
-/* only about page */
+/* only about page ↓ */
 
-.our-hero-h2 {
+.team-grid-title {
     color: white;
     justify-self: center;
     display: flex;
@@ -720,7 +725,7 @@ header {
     font-family: "Lato", Arial;
 }
 
-.our-hero-divs {
+.team-grid {
     gap: 50px;
     flex-direction: row;
     display: flex;
@@ -730,7 +735,7 @@ header {
     margin-bottom: 200px;
 }
 
-.our-hero-div {
+.team-grid-card {
     background-color: #FFB4D3;
     max-width: 352px;
     width: 100%;
@@ -738,7 +743,7 @@ header {
     border-radius: 16px;
 }
 
-.contact-img-team {
+.team-member-image {
     justify-self: center;
     display: flex;
 }
@@ -767,6 +772,8 @@ header {
 .contact-button:hover {
     transform: scale(1.1);
 }
+
+/* only contact page ↓ */
 
 .contact-form-div {
     max-width: 942px;
@@ -812,6 +819,8 @@ header {
 .send-button {
     align-self: flex-end;
 }
+
+/* footer ↓ */
 
 .footer-box {
     display: flex;

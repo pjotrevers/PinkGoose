@@ -19,7 +19,7 @@ header {
     padding: 20px;
 }
 
-/* header ↓ */
+/* header ↓ (deze comment staat hier zodat andere makkelijk kunnen herkennen waar het header deel is om aanpassen sneller en makkelijker te maken) */
 
 .logo {
     color: white;
@@ -48,7 +48,7 @@ header {
     flex-wrap: wrap;
 }
 
-.nav-buttons {
+.nav-button {
     border: none;
     background-color: transparent;
     color: white;
@@ -61,7 +61,7 @@ header {
     display: inline-block;
 }
 
-.nav-buttons:hover {
+.nav-button:hover {
     background-color: #8fa7c071;
     transform: scale(1.1);
 }
@@ -91,7 +91,7 @@ header {
     box-shadow: 0px 0px 20px #ffffff86;
 }
 
-/* only index page ↓ */
+/* only index page ↓ (deze comment staat hier zodat andere makkelijk kunnen herkennen waar het index deel is om aanpassen sneller en makkelijker te maken) */
 
 .main-title {
     display: flex;
@@ -184,7 +184,7 @@ header {
     transform: scale(1.1);
 }
 
-/* css (over meerdere paginas gebruikt) ↓ */
+/* css (over meerdere paginas gebruikt) ↓ (deze comment staat hier zodat andere makkelijk kunnen herkennen waar het meerdere gebruikte deel is om aanpassen sneller en makkelijker te maken) */
 
 .h2-section1-text {
     color: white;
@@ -208,7 +208,7 @@ header {
     list-style-type: none;
 }
 
-.labels {
+.label {
     background-color:#182632;
     width: auto;
     padding-top: 14px;
@@ -331,7 +331,7 @@ header {
     font-size: 54px;
 }
 
-.sentences {
+.sentence {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -341,7 +341,7 @@ header {
     transition: color 0.1s ease;
 }
 
-.sentences:hover {
+.sentence:hover {
     color: white;
 }
 
@@ -378,6 +378,11 @@ header {
     text-align: center;
 }
 
+.block-formatting {
+    display: flex;
+    flex-direction: column;
+}
+
 .block {
     background-color: #121E28;
     width: 150px;
@@ -399,6 +404,7 @@ header {
     margin: 12px 0 0;
     font-size: 20px;
     color: white;
+    font-weight: bold;
 }
 
 .team-text {
@@ -592,12 +598,12 @@ header {
 }
 
 .divs-h3-blockworks {
-    margin-top: 27px;
+    margin-top: 26px;
     margin-bottom: 10px;
 }
 
 .divs-h3-techcrunch {
-    margin-top: 26px;
+    margin-top: 27px;
     margin-bottom: 10px;
 }
 
@@ -712,7 +718,7 @@ header {
     font-weight: 500;
 }
 
-/* only about page ↓ */
+/* only about page ↓ (deze comment staat hier zodat andere makkelijk kunnen herkennen waar het about deel is om aanpassen sneller en makkelijker te maken) */
 
 .team-grid-title {
     color: white;
@@ -773,7 +779,7 @@ header {
     transform: scale(1.1);
 }
 
-/* only contact page ↓ */
+/* only contact page ↓ (deze comment staat hier zodat andere makkelijk kunnen herkennen waar het contact deel is om aanpassen sneller en makkelijker te maken) */
 
 .contact-form-div {
     max-width: 942px;
@@ -820,16 +826,15 @@ header {
     align-self: flex-end;
 }
 
-/* footer ↓ */
+/* footer ↓ (deze comment staat hier zodat andere makkelijk kunnen herkennen waar het footer deel is om aanpassen sneller en makkelijker te maken) */
 
 .footer-box {
     display: flex;
     background-color: #121E28;
-    height: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 30px;
+    padding: 40px;
     margin-bottom: -50px;
     margin-left: -30px;
     margin-right: -30px;
@@ -859,11 +864,7 @@ header {
     color: #FFC803;
 }
 
-.socials {
-    margin: 5%;
-}
-
-.all-social-icons img {
+.social-icon img {
     display: block;
     border-radius: 50%;
     padding: 10px;
@@ -873,7 +874,7 @@ header {
     transition: transform 0.3s ease, background-color 0.25s ease;
 }
 
-.all-social-icons {
+.social-icon {
     display: inline-block;
 }
 
